@@ -11,8 +11,8 @@ import uni.parthenope.carsharing.repository.UtenteRepository;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/lateUsers")
 public class LateUsersServlet extends HttpServlet {
+
     private UtenteRepository userRepository;
 
     @Override

@@ -10,7 +10,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ce83041-75cb-4a3a-8368-29350e7bec13" name="Changes" comment="che devo scrivere">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CarSharing_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/controller/registrazione/RegisterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/dao/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/utility/PasswordHashing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/aggiungiParcheggio.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/listaParcheggi.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/modificaParcheggio.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/controller/parcheggio/ParcheggioServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/controller/parcheggio/ParcheggioServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/controller/prenotazione/PrenotazioneUtenteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/controller/prenotazione/PrenotazioneUtenteServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/controller/utente/LateUsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/controller/utente/LateUsersServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/controller/veicolo/RimuoviVeicoloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/controller/veicolo/RimuoviVeicoloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/model/Pagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/model/Pagamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/model/Parcheggio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/model/Parcheggio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/repository/ParcheggioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/repository/ParcheggioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/repository/PrenotazioneRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/repository/PrenotazioneRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/repository/VeicoloRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/repository/VeicoloRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/repository/util/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uni/parthenope/carsharing/repository/util/HibernateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/listaPrenotazioniUtente.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listaPrenotazioniUtente.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,18 +49,18 @@
       <list>
         <option value="Interface" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -48,10 +75,10 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2i3iYG18XXZFINhwqB9v9sowp8J" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -65,7 +92,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat Server.Tomcat 10.1.20.executor": "Run",
-    "git-widget-placeholder": "<unknown>",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Utente/IdeaProjects/CampiTennis",
@@ -76,8 +103,8 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
     "vue.rearranger.settings.migration": "true"
   }
@@ -85,10 +112,14 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Utente\IdeaProjects\CarSharing\src\main\webapp" />
+      <recent name="C:\Users\Utente\IdeaProjects\CarSharing\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\Utente\IdeaProjects\CarSharing\src\main\resources" />
+      <recent name="C:\Users\Utente\IdeaProjects\CarSharing\src\main\resources\META-INF" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 10.1.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.20" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="CarSharing:war exploded">
           <settings>
@@ -169,9 +200,7 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="CarSharing:war exploded" />
-        </option>
+        <option name="BuildArtifacts" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -192,6 +221,8 @@
       <option name="presentableId" value="Default" />
       <updated>1718725708267</updated>
       <workItem from="1718725709411" duration="33055000" />
+      <workItem from="1720543144280" duration="4475000" />
+      <workItem from="1721140873674" duration="19603000" />
     </task>
     <task id="LOCAL-00001" summary="che devo scrivere">
       <option name="closed" value="true" />

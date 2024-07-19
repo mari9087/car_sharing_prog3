@@ -65,6 +65,23 @@ public class VeicoloRepository implements Repository <Veicolo, Long> {
         }
     }
 
+    @Transactional
+    public void deleteByTarga(String targa) throws Exception {
+        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
+            session.beginTransaction();
+            Query<Veicolo> query = session.createQuery("FROM Veicolo WHERE targa = :targa", Veicolo.class);
+            query.setParameter("targa", targa);
+            Veicolo veicolo = query.uniqueResult();
+
+            if (veicolo == null) {
+                throw new RuntimeException("Veicolo non trovato per targa: " + targa);
+            }
+
+            session.delete(veicolo);
+            session.getTransaction().commit();
+        }
+    }
+
     public Veicolo getByTarga(String targa) {
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             Query<Veicolo> query = session.createQuery("FROM Veicolo WHERE targa = :targa", Veicolo.class);

@@ -4,6 +4,7 @@ import jakarta.transaction.Transactional;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 import uni.parthenope.carsharing.model.Prenotazione;
+import uni.parthenope.carsharing.model.Utente;
 import uni.parthenope.carsharing.repository.util.HibernateUtil;
 
 import java.util.List;
@@ -66,6 +67,14 @@ public class PrenotazioneRepository implements Repository<Prenotazione, Long> {
             Query<Prenotazione> query = session.createQuery("FROM Prenotazione WHERE utente.tessera = :tesseraUtente", Prenotazione.class);
             query.setParameter("tesseraUtente", tesseraUtente);
             return query.list();
+        }
+    }
+
+    public List<Prenotazione> getByUtente(Utente utente) {
+        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
+            Query<Prenotazione> query = session.createQuery("FROM Prenotazione WHERE utente = :utente", Prenotazione.class);
+            query.setParameter("utente", utente);
+            return query.getResultList();
         }
     }
 }

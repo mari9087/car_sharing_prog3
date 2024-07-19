@@ -6,12 +6,17 @@ import org.hibernate.cfg.Configuration;
 public class HibernateUtil {
     private static SessionFactory sessionFactory = buildSessionFactory();
 
-
     private static SessionFactory buildSessionFactory() {
         try {
-            return new Configuration().configure().buildSessionFactory();
-        }
-        catch(Exception e) {
+            // Carica il file hibernate.cfg.xml dalla classe di configurazione
+            Configuration configuration = new Configuration();
+            configuration.configure(HibernateUtil.class.getClassLoader().getResource("hibernate.cfg.xml"));
+            System.out.println("Database connected.");
+
+            // Costruisci la SessionFactory
+            sessionFactory = configuration.buildSessionFactory();
+            return sessionFactory;
+        } catch (Exception e) {
             System.err.println("Session Factory creation failed: " + e);
             throw new ExceptionInInitializerError(e);
         }
@@ -24,5 +29,4 @@ public class HibernateUtil {
     public static void shutdown() {
         getSessionFactory().close();
     }
-
 }

@@ -10,10 +10,12 @@
         <property name="connection.username">postgres</property>
         <property name="connection.password">postgres</property>
         <property name="connection.pool_size">3</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
         <property name="current_session_context_class">thread</property>
         <property name="format_sql">true</property>
         <property name="hbm2ddl.auto">update</property>
         <property name="show_sql">false</property>
+
 
         <mapping package="uni.parthenope.carsharing.model"/>
         <mapping class="uni.parthenope.carsharing.model.Utente"/>
@@ -21,5 +23,6 @@
         <mapping class="uni.parthenope.carsharing.model.Prenotazione"/>
         <mapping class="uni.parthenope.carsharing.model.Parcheggio"/>
         <mapping class="uni.parthenope.carsharing.model.Pagamento"/>
+        <mapping class="uni.parthenope.carsharing.model.User"/>
     </session-factory>
 </hibernate-configuration>

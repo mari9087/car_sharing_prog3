@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/car_sharing</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">postgres</property>
+        <property name="connection.pool_size">3</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="current_session_context_class">thread</property>
+        <property name="format_sql">true</property>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="show_sql">false</property>
+
+
+        <mapping package="uni.parthenope.carsharing.model"/>
+        <mapping class="uni.parthenope.carsharing.model.Utente"/>
+        <mapping class="uni.parthenope.carsharing.model.Veicolo"/>
+        <mapping class="uni.parthenope.carsharing.model.Prenotazione"/>
+        <mapping class="uni.parthenope.carsharing.model.Parcheggio"/>
+        <mapping class="uni.parthenope.carsharing.model.Pagamento"/>
+        <mapping class="uni.parthenope.carsharing.model.User"/>
+    </session-factory>
+</hibernate-configuration>

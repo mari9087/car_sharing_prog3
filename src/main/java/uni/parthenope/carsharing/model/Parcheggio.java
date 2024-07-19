@@ -72,6 +72,35 @@ public class Parcheggio implements Serializable {
         this.veicoli = veicoli;
     }
 
+    public int getCapacitaAuto() {
+        return capacitaAuto;
+    }
 
+    public void setCapacitaAuto(int capacitaAuto) {
+        this.capacitaAuto = capacitaAuto;
+    }
 
+    public LocalDateTime getOrarioApertura() {
+        return orarioApertura;
+    }
+
+    public void setOrarioApertura(LocalDateTime orarioApertura) {
+        this.orarioApertura = orarioApertura;
+    }
+
+    public LocalDateTime getOrarioChiusura() {
+        return orarioChiusura;
+    }
+
+    public void setOrarioChiusura(LocalDateTime orarioChiusura) {
+        this.orarioChiusura = orarioChiusura;
+    }
+
+    public BigDecimal getTariffaOraria() {
+        return tariffaOraria;
+    }
+
+    public void setTariffaOraria(BigDecimal tariffaOraria) {
+        this.tariffaOraria = tariffaOraria;
+    }
 }
